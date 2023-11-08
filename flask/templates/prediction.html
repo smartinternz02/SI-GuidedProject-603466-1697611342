@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor salary prediction</title>
+
+</head>
+
+<body style="background-image: url(https://wallpapers.com/images/high/doctor-background-mtnrda00fx24l1tn.webp); background-size: cover; background-repeat: no-repeat;">
+
+    <h1 style="position: relative;">Doctor salary prediction
+    </h1>
+    <form action="{{ url_for('result')}}" method="post">
+<h1 style="margin-left: 750px;"> fill the details: </h1>
+        <div class="form-row">
+            <input  style="margin-left: 800px;"  type="number" class="form-input" name='Specialty' placeholder="Specialty" >
+            <br>
+
+            <input style="margin-left: 1000px;" type="number" class="form-input" name='Feel_Fairly_Compensated' placeholder="Feel_Fairly_Compensated">
+            <br>
+        </div>
+        <div class="form-row">
+            <input style="margin-left: 800px;" type="number" class="form-input" name='Female' placeholder="Female" >
+            <br>
+
+            <input style="margin-left: 1000px;" type="number" class="form-input" name='Difference_in_Earnings_between_Physicians_who_Feels_Fairly_vs_Unfairly_Paid' placeholder="Difference_in_Earnings_between_Physicians_who_Feels_Fairly_vs_Unfairly_Paid">
+            <br>
+        </div>
+        <div class="form-row">
+            <input style="margin-left: 800px;" type="number" class="form-input" name='overall_career_satisfaction' placeholder="overall_career_satisfaction">
+            <br>
+
+            <input style="margin-left: 1000px;" type="number" class="form-input" name='satisfied_w_income' placeholder="satisfied_w_income">
+            <br>
+        </div>
+        <div class="form-row">
+            <input style="margin-left: 800px;" type="number" class="form-input" name='would_choose_medicine_again' placeholder="would_choose_medicine_again">
+            <br>
+
+            <input style="margin-left: 1000px;" type="number" class="form-input" name='would_choose_the_same_specialty' placeholder="would_choose_the_same_specialty">
+            <br>
+          </div>
+<div class="form-row">
+    <input style="margin-left: 800px;" type="number" class="form-input" name="survey_respondents_by_specialty" placeholder="survey_respondents_by_specialty">
+    <br>
+
+    <input  style="margin-left: 1000px;" type="number" class="form-input" name="labels_below_are_correct_only_when_annual_income_is_in_descending_order" placeholder="labels_below_are_correct_only_when_annual_income_is_in_descending_order">
+    <br>
+</div>
+<br>
+<br>
+<br>
+<input style="margin-left: 950px; margin-top: auto; position: center;" type="submit" class="form-submit" value="Submit">
+        </form>
+</body>
+</html>
